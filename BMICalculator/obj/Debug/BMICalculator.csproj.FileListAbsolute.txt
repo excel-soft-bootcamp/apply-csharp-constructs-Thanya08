@@ -1,0 +1,7 @@
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\bin\Debug\BMICalculator.exe.config
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\bin\Debug\BMICalculator.exe
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\bin\Debug\BMICalculator.pdb
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\obj\Debug\BMICalculator.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\obj\Debug\BMICalculator.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\obj\Debug\BMICalculator.exe
+C:\Users\ADMIN\source\repos\Examples\BMICalculator\obj\Debug\BMICalculator.pdb
