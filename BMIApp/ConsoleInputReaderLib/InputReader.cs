@@ -10,20 +10,17 @@ namespace ConsoleInputReaderLib
     {
         public double GetHeight()
         {
-            double height = double.Parse((this.ReadFromConsole("Enter height")));
+            Console.WriteLine("Enter your height in meter:");
+            double height = Convert.ToDouble((Console.ReadLine()));            
             return height;
         }
         public double GetWeight()
         {
-            double weight = double.Parse((this.ReadFromConsole("Enter Weight")));
+            Console.WriteLine("Enter your weight in meter:");
+            double weight = Convert.ToDouble((Console.ReadLine()));  
             return weight;
         }
 
-        private string ReadFromConsole(string message)
-        {
-            Console.WriteLine(message);
-            string input = Console.ReadLine();
-            return input;
-        }
+      
     }
 }
