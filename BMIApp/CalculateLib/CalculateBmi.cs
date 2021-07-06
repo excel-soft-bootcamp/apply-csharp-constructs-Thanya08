@@ -9,7 +9,7 @@ namespace CalculateLib
     public class CalculateBmi
     {
       
-        public double calculatebmi(double height, double weight)
+        public double bmicalculate(double height, double weight)
         {
             return double result = weight / height;
         }
