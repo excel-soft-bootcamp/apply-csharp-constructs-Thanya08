@@ -11,13 +11,17 @@ namespace ValidationLib
         public string BmiValidate(double bmiValue)
         {
             if (bmiValue < 18.5)
+            {
                 return "Underweight";
-
+            }
             else if (bmiValue >= 25)
+            {
                 return "Overweight";
-
+            }
             else
+            {
                 return "healthy";
+            }
         }
     }
 }
