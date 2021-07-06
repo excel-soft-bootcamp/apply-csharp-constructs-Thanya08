@@ -10,18 +10,16 @@ namespace BMIApp
     {
         static void Main(string[] args)
         {
-            ConsoleInputReaderLib reader = new ConsoleInputReaderLib();
-            double height = reader.GetHeight();
-            double weight = reader.GetWeight();
+            ConsoleInputReaderLib.InputReader reader = new  ConsoleInputReaderLib.InputReaderb();
+           
+            CalculateLib.CalculateBmi value = CalculateLib.CalculateBmi();
+            double Bmivalue = value.bmicalculate(reader.GetHeight(), reader.GetWeight());
 
-            CalculateLib obj = new CalculateLib(height, weight);
-            double Bmivalue = obj.BmiCalculation();
-
-            ValidationLib _validate = new ValidationLib();
+            ValidationLib.ValidationBmi _validate = new ValidationLib.ValidationBmi();
             string message = _validate.BmiValidate(Bmivalue);
 
-            ConsoleDisplayLib display = new ConsoleDisplayLib();
-            display.ConsoleDisplay(message);
+            ConsoleDisplayLib.display  resultdisplay = new ConsoleDisplayLib.display();
+            resultdisplay.ConsoleDisplay(message);
             Console.ReadKey();
         }
     }
