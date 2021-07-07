@@ -18,7 +18,7 @@ namespace BMIApp
             ValidationLib.ValidationBmi _validate = new ValidationLib.ValidationBmi();
             string message = _validate.BmiValidate(Bmivalue);
 
-            ConsoleDisplayLib.display  resultdisplay = new ConsoleDisplayLib.display();
+             ConsoleDisplayLib.Display resultdisplay = new ConsoleDisplayLib.Display();
             resultdisplay.ConsoleDisplay(message);
             Console.ReadKey();
         }
