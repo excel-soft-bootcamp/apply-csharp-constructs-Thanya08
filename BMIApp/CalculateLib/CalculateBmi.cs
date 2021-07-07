@@ -11,7 +11,8 @@ namespace CalculateLib
       
         public double bmicalculate(double height, double weight)
         {
-            return double result = weight / height;
+            double result = weight / height;
+            return result;
         }
 
 
