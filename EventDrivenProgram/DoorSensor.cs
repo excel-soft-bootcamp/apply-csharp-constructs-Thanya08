@@ -6,18 +6,25 @@ using System.Threading.Tasks;
 
 namespace EventDrivenProgram
 {
-    public delegate string DoorAction();
+    public delegate void DoorActionHandler(string status);
     public class DoorSensor
     {
-        public string open()
-        { 
-            return "door is open";
-           
+        string status;
+        public event DoorActionHandler OnDoorStatusChanged;
+        public void Open()
+        {
+            status = "opened";
+            OnDoorStatusChanged.Invoke(this.status);
+
         }
 
-        public string close()
+        public void Close()
         {
-            return "door is closed";
+            status = "closed";
+            OnDoorStatusChanged.Invoke(this.status);
         }
+
+        
+
     }
 }

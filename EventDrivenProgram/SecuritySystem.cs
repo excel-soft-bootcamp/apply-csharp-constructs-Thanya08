@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EventDrivenProgram
 {
-    class SecuritySystem
+    public class SecuritySystem
     {
-        public void SendMessage(string message)
+        public void Notify(string status)
         {
-            Console.WriteLine("send message");
+            Console.WriteLine("Door is" +status+ "at" +DateTime.Now.ToString());
         }
     }
 }
