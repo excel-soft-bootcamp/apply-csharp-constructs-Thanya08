@@ -11,7 +11,7 @@ namespace EventDrivenProgram
         static void Main(string[] args)
         {
             SecuritySystem _securitySystem = new SecuritySystem();
-            DoorActionHandler doorStatusChangeHandler = new DoorActionHandler(_securitySystem.Notify);
+            DoorActionHandler doorStatusChangeHandler = new DoorActionHandler(_securitySystem.Update);
 
 
             DoorSensor doorSensor = new DoorSensor();

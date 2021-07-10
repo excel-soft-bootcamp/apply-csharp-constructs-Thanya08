@@ -14,17 +14,21 @@ namespace EventDrivenProgram
         public void Open()
         {
             status = "opened";
-            OnDoorStatusChanged.Invoke(this.status);
+            this.Notify();
 
         }
 
         public void Close()
         {
             status = "closed";
-            OnDoorStatusChanged.Invoke(this.status);
+            this.Notify();
         }
 
-        
+        void Notify()
+        {
+            string message = $"{this.status} and Time : {System.DateTime.Now.ToString()}";
+            OnDoorStatusChanged.Invoke(message);
+        }
 
     }
 }

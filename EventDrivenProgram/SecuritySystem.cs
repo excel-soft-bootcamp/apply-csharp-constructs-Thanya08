@@ -8,9 +8,9 @@ namespace EventDrivenProgram
 {
     public class SecuritySystem
     {
-        public void Notify(string status)
+        public void Update(string message)
         {
-            Console.WriteLine("Door is" +status+ "at" +DateTime.Now.ToString());
+           Console.WriteLine(message);
         }
     }
 }
